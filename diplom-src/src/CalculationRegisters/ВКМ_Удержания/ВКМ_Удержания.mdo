@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="04349f3d-2648-4435-954a-301c15b2dff7">
+  <producedTypes>
+    <selectionType typeId="a3088fb0-e6e3-4eb7-b931-587f255193d6" valueTypeId="d48598eb-481d-4c20-a829-7e14cbae5242"/>
+    <listType typeId="36f687de-6022-41d8-b246-87049ef8b6a2" valueTypeId="7d5e9ce4-a322-4394-94fd-b4d634f9b4e0"/>
+    <managerType typeId="590338fe-8bf7-4fdc-95c9-da700e926eb4" valueTypeId="6d6aa504-7774-4f4a-a932-de1e8f187e90"/>
+    <recordSetType typeId="10159508-3120-4784-adb4-0bfb7adaf20c" valueTypeId="bca64305-83ae-495a-a29a-d2a75917bf72"/>
+    <recordKeyType typeId="1528dd68-c495-44e9-874d-bc68a519529d" valueTypeId="a55af575-1243-4bf7-a351-8da4e455199d"/>
+    <recordType typeId="c7852278-35ae-4aa5-84ca-7dead52c73f9" valueTypeId="c789443e-ae1f-4673-8e1a-ed2cbf4290fc"/>
+    <recalcsType typeId="4f60f0e7-14d5-426b-b36d-eb9bba6a8119" valueTypeId="7e1cb529-e854-4090-8fb3-372611f4f018"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="677ed8e4-df91-497b-8d5e-cdcafb2d9142">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="e4cb906b-ff62-4529-8560-dbdf0917773c">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</types>
+      <types>ChartOfCalculationTypesRef.ВКМ_ДополнительныеНачисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="266c86c0-86e2-4d85-b706-f0d643a384cc">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>
