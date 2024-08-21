@@ -37,20 +37,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <attributes uuid="e4cb906b-ff62-4529-8560-dbdf0917773c">
-    <name>Источник</name>
-    <synonym>
-      <key>ru</key>
-      <value>Источник</value>
-    </synonym>
-    <type>
-      <types>ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</types>
-      <types>ChartOfCalculationTypesRef.ВКМ_ДополнительныеНачисления</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </attributes>
   <dimensions uuid="266c86c0-86e2-4d85-b706-f0d643a384cc">
     <name>Сотрудник</name>
     <synonym>
